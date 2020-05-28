@@ -15,24 +15,27 @@ li, a, button {
 
 button{
     cursor: pointer;
-    padding: 9px 10px;
-    background-color: rgba(92, 128, 196,1);
-    font-size: 1.2vw;
+    padding: 9px 22px;
+    background-color: rgb(130, 160, 214);
+    font-size: 1.08vw;
     border: none;
-    border-radius: 50px;
+    border-radius: 60px;
     transition: 0.3s ease 0s;
+    margin-left: 20px;
 }
 
 button:hover{
     background-color: rgba(92, 128, 196,0.8);
+    scale: 1.1;
 }
 
 .navlist{
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 30px,10%;
     display: flex;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.08vw;
+    background-color: #f3eae3;
 }
 
 *{
@@ -49,6 +52,11 @@ button:hover{
 .navlinks li{
     display: inline-block;
     padding: 0 25px;
+    transition: 0.3s ease 0s;
+}
+
+.navlinks li:hover{
+    scale: 1.1;
 }
 
 .navlinks li a{
@@ -58,9 +66,23 @@ button:hover{
 
 .navlinks a:hover{
     color: rgb(128, 44, 44);
+    scale: 1.1;
 }
 
 .logo{
-    height: 14vh;
+    height: 9vh;
     cursor: pointer;
+    padding-left: 20px;
+    transition: 0.3s ease 0s;
+}
+
+.logo:hover{
+    opacity: 0.85;
+    scale: 1.1;
+}
+
+.nav_logo{
+    margin-right: auto;
+    padding: 10px;
+    padding-left: 20px;
 }
